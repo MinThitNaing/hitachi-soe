@@ -1,0 +1,520 @@
+/* ----- Common CSS Style ----- */
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #333;
+    font-size: 100%;
+    line-height: 100%;
+    text-align: left;
+    background-color: #e5e5e5;
+    text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+div {
+    display: block;
+}
+
+.Android body {
+    font-family: Droid Sans, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+body, div, dl, dt, dd, ul, ul li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    line-height: 160%;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: #a94657;
+}
+
+img {
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
+}
+
+img, abbr, acronym, fieldset {
+    border: 0;
+}
+
+input, textarea {
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+/* ----- End Common CSS Style ----- */
+/* ----- Header Menu Style ----- */
+#HeaderArea1 {
+    position: relative;
+    background-color: #ffffff;
+    z-index: 80;
+    min-width: 320px;
+}
+
+#HeaderArea1 > .Container, #HeaderArea1 > .ContainerFix {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+.Container, .ContainerFix {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 290px;
+}
+
+#Statement {
+    height: 45px;
+    margin-right: auto;
+    display: block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#Statement img {
+    width: 95px;
+    height: 29px;
+    margin-bottom: -4px;
+}
+
+#SupportNavi {
+    margin-left: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+    max-width: 610px;
+}
+
+#SupportNavi > button {
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+#SupportNavi > a, #SupportNavi > button > span {
+    position: relative;
+    height: 45px;
+    padding: 0;
+    font-size: 83%;
+    white-space: normal;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#SupportNavi > button {
+    font-family: Arial,Helvetica,sans-serif;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+#SupportNavi > a > img, #SupportNavi > button > span > img {
+    vertical-align: middle;
+    padding: 5px 0;
+    width: 35px;
+    height: 35px;
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important;
+    display: inline-block;
+    pointer-events: none;
+}
+
+#SupportNavi.SupportNaviIconText > a > img+span, #SupportNavi.SupportNaviIconText > button > span > img+span {
+    margin-left: -15px;
+}
+
+#SupportNavi > a > span, #SupportNavi > button > span > span {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#LangMenu {
+    width: 230px;
+    position: absolute;
+    z-index: 110;
+    top: 0;
+    background-color: #ccc;
+    overflow-y: scroll;
+    max-height: 321px;
+    display: none;
+}
+
+#LangMenu a {
+    display: block;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    font-size: 83%;
+    color: #000;
+    text-decoration: none;
+}
+
+#LangMenu a:hover::before, #LangMenu a:focus::before, #LangMenu a.Current::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 15px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../../image/en/r1/common2/icon_checkmark.png);
+}
+
+#SupportNavi > a:link, #SupportNavi > a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#SearchFormArea {
+    display: none;
+    position: absolute;
+    padding: 10px 0 15px 0;
+    background-color: #ccc;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    top: 45px;
+}
+
+#SearchFormArea .BtnClose {
+    display: block;
+    margin-left: calc(100% - 20px);
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#SearchFormArea form {
+    display: block;
+}
+
+#SearchFormArea .BtnClose::before, #SearchFormArea .BtnClose::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #666;
+    transform: rotate(45deg);
+    transform-origin: 0% 50%;
+    position: absolute;
+    top: calc(14% - 1px);
+    left: 14%;
+}
+
+#SearchFormArea .BtnClose::after {
+    transform: rotate(-45deg);
+    transform-origin: 100% 50%;
+    left: auto;
+    right: 14%;
+}
+
+#SearchFormArea .SearchGroup {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+#SearchFormArea .SearchPhrease {
+    box-sizing: border-box;
+    display: block;
+    height: calc(24px + 12px + 2px);
+    padding: 6px 12px;
+    font-size: 90%;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 1px solid transparent;
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+}
+
+#SearchFormArea .SearchBtn {
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0 0 0;
+    padding: 0 10px;
+    background-color: #cccccc;
+    color: #fff;
+    font-size: 90%;
+    border: 0;
+    cursor: pointer;
+    appearance: none;
+    user-select: none;
+    text-align: center;
+    background-color: transparent;
+    padding: 6px;
+    line-height: 1.5;
+    background-color: #b1000e;
+    margin-top: 1px;
+    width: 200px;
+    margin-left: -1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#SpMenuBtn {
+    width: 45px;
+    height: 45px;
+    background-color: #ff0026;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#SpMenuBtn span:nth-of-type(1) {
+    top: 30%;
+}
+
+#SpMenuBtn span:nth-of-type(2) {
+    top: calc(50% - 1px);
+}
+
+#SpMenuBtn span:nth-of-type(3) {
+    bottom: 30%;
+}
+
+#SpMenuBtn span {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    left: 25%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transform-origin: center;
+}
+
+#SpMenuModal:not(.show) {
+    opacity: 0;
+}
+
+#SpMenuModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 75;
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    outline: 0;
+    transition: opacity 0.15s linear;
+    outline: 0;
+}
+
+#SpMenuModal #SpMenuModalDialog {
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+#SpMenuModalDialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+
+#SpMenuModalContent {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 45px;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    max-height: calc(100vh - 16px);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#SpMenuModalBody {
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+#SpGlobalNavi li {
+    float: none;
+    box-sizing: border-box;
+}
+
+#SpSupportNavi {
+    border-top: 1px solid #ddd;
+}
+
+#SpSupportNavi li {
+    float: none;
+}
+
+#HeaderArea2 {
+    position: relative;
+    background-color: #f2f2f2;
+    min-width: 320px;
+    z-index: 1;
+}
+
+#HeaderArea2 > .Container, #HeaderArea2 > .ContainerFix {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+#SiteID {
+    box-sizing: border-box;
+    min-height: 60px;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#SiteID a {
+    color: #000;
+    text-decoration: none;
+}
+
+#SiteID img {
+    width: 95px;
+    height: 35px;
+    vertical-align: middle;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*#SiteID img+span {
+    display: none;
+}*/
+
+#SiteID span {
+    vertical-align: middle;
+    font-family: Droid Sans, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    word-break: break-all;
+    font-weight: bold;
+}
+
+#GlobalNaviMenu {
+    width: auto;
+    margin: 0;
+}
+
+#GlobalNaviMenu > li {
+    float: left;
+}
+
+#GlobalNaviMenu > li > a:link, #GlobalNaviMenu > li > a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#GlobalNaviMenu > li > a, #GlobalNaviMenu > li > button > span {
+    padding: 0 15px;
+    font-size: 83%;
+    height: 60px;
+    line-height: 1.2;
+    text-align: center;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+#Statement img {
+    width: 95px;
+    height: 29px;
+    margin-bottom: -4px;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .Container.Wide {
+        max-width: 1275px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+.Container {
+    max-width: 965px;
+}

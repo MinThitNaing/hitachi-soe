@@ -1,0 +1,916 @@
+@charset "Shift_JIS";
+
+/* **************************************************
+
+Name: rd_top.css
+
+Description: only for rd/index.html
+
+Create: 2020.03.18
+
+***************************************************** */
+
+.mv .mv_img img{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+.mv .mv_img .sp{
+    display: none;
+}
+.mv .mv_img{
+    background-image: url("/rd/image/top/mv_pc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+.mv .mv_wrap{
+    width: 1275px;
+    max-width: 100%;
+    min-height: 640px;
+    margin: auto;
+    position: relative;
+    padding: 0 4.7%;
+    box-sizing: border-box;
+}
+.mv .mv_txt{
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.2;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 4.7%;
+}
+
+@media screen and (max-width: 1364px){
+    
+    .mv .mv_img{
+        background-size: cover;
+        background-position: right 25% top;
+    }
+}
+@media screen and (max-width: 995px){
+    .mv .mv_txt{
+        font-size: 45px;
+    }
+    .mv .mv_wrap{
+        min-height: 60vw;
+    }
+}
+
+
+.mv .search_box{
+    width: 880px;
+    margin: auto;
+    max-width: 100%;
+    background-color: #eeeeee;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: -57px;
+    position: relative;
+}
+.mv .search_form{
+    border: #333333 2px solid ;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/rd/image/top/search_icon.png");
+    background-repeat: no-repeat;
+    background-position: left 20px  center;
+    padding: 4px 9px 4px 58px;
+}
+.mv .search_form input,
+.mv .search_form button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+}
+.mv .search_form input{
+    font-size: 18px;
+    width: calc( 100% - 145px);
+    padding: 18px 10px 18px 0;
+}
+/*------------------- IE11 -------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.mv .search_form input{
+    padding: 10px 0 18px;
+}
+.mv .search_form input::placeholder{
+    font-size: 18px;
+    color: #888888;
+}
+.mv .search_form button{
+    width: 145px;
+    height: 54px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #333333;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+}
+/*------------------- IE11 -------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.mv .search_form button{
+    margin: 5px 0;
+}
+.mv .search_form button:hover{
+    opacity: 0.7;
+}
+
+.pickup.Section{
+    padding: 100px 0 55px;
+}
+.pickup.Section .Head2Title,
+.research_area.Section .Head2Title,
+.information.Section .Head2Title ,
+.glossary.Section .Head2Title,
+.related_links.Section .Head2Title{
+    width: 100%;
+    max-width: 100%;
+}
+.pickup_ContentsBoxArea{
+    display: flex;
+}
+.pickup_ContentsBoxArea .ContentsBox {
+    width: calc( ( 100% - 69px)  / 4);
+    margin-right: 23px;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+.pickup_ContentsBoxArea .ContentsBox:last-of-type{
+    margin-right: 0;
+}
+.pickup_ContentsBoxArea .ContentsTitle,
+.research_ContentsBoxArea .ContentsTitle{
+    font-size: 20px;
+    /*font-weight: bold;*/
+    text-align: center;
+    background-image: none;
+    color: #cc0022;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.pickup_ContentsBoxArea .ContentsBox img,
+.research_ContentsBoxArea .ContentsBox img{
+    width: 100%;
+}
+.pickup_ContentsBoxArea .ContentsBox p{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.pickup_ContentsBoxArea .ContentsBox a,
+.research_ContentsBoxArea .ContentsBox a{
+    text-decoration: none;
+}
+.pickup_ContentsBoxArea .ContentsImg,
+.research_ContentsBoxArea .ContentsImg{
+    overflow: hidden;
+
+}
+.pickup_ContentsBoxArea .ContentsBox a img,
+.research_ContentsBoxArea .ContentsBox a img{
+    transition-duration: 0.3s;
+}
+.pickup_ContentsBoxArea .ContentsBox a:hover img,
+.research_ContentsBoxArea .ContentsBox a:hover img{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+
+.pickup_ContentsBoxArea .ContentsBox a:hover .ContentsTitle,
+.research_ContentsBoxArea .ContentsBox a:hover .ContentsTitle{
+    opacity: 0.7;
+}
+.pickup_ContentsBoxArea .ContentsBox a:hover p{
+    opacity: 0.7;
+}
+
+
+.research_ContentsBoxArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.research_ContentsBoxArea .ContentsBox{
+    margin-right: 26px;
+    margin-bottom: 25px;
+    width: 300px;
+    max-width: 100%;
+}
+.research_ContentsBoxArea .ContentsBox:nth-of-type(4),
+.research_ContentsBoxArea .ContentsBox:nth-of-type(5),
+.research_ContentsBoxArea .ContentsBox:nth-of-type(6){
+    margin-right: 24px;
+}
+
+.research_ContentsBoxArea .ContentsBox:nth-of-type(3),
+.research_ContentsBoxArea .ContentsBox:nth-of-type(7),
+.research_ContentsBoxArea .ContentsBox:nth-of-type(10){
+    margin-right: 0;
+}
+.research_ContentsBoxArea .ContentsTitle .sp{
+    display: none;
+}
+
+.information .contentsWidth + .contentsWidth{
+    margin-top: 16px;
+}
+.rdInfoTtl h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.rdInfoTtl .FMLinkListStyle{
+    top: 9px;
+}
+.rdInfoTtl .FMLinkListStyle li{
+    margin-bottom: 0;
+    line-height: 1;
+    padding-bottom: 0;
+}
+.rdInfoTtl .FMLinkListStyle li .more{
+    line-height: 1;
+}
+.rdInfoTtl .FMLinkListStyle li .more a{
+    font-size: 16px;
+    color: #cc0022; 
+    padding: 0 25px 0 0;
+}
+.rdInfoLists li {
+    font-size: 16px;
+    line-height: 1.9;
+    padding-bottom: 30px;
+    letter-spacing: -0.02em;
+    
+}
+.rdInfoLists li a{
+    text-decoration: none;
+}
+.rdInfoLists li a:hover{
+    text-decoration: underline;
+}
+.rdInfoLists li .category{
+    font-size: 13px;
+    background-color: #e60026;
+    padding: 3px 8px 2px;
+}
+
+
+.glossary.Section{
+    padding-bottom: 93px;
+}
+.glossary_area{
+    width: 1275px;
+    max-width: 100%;
+    margin: auto;
+    border: 1px solid #dcdcdc;
+    padding: 40px 15px 7px;
+    box-sizing: border-box;
+}
+.glossary .glossary_ttl{
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0 0 17px;
+}
+.glossary .glossary_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 5px 0;
+}
+.glossary .glossary_list dt{
+    width: 32px;
+    height: 32px;
+    background-color: #333333;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glossary .glossary_list dd{
+    width: calc( 20% - 32px);
+    font-size: 15px;
+    line-height: 1.56;
+    padding: 5px 10px 15px;
+    box-sizing: border-box;
+    min-height: calc( 3em + 20px);
+}
+.glossary .glossary_list dd a{
+    text-decoration: none;
+    background-image: url(/rd/image/top/icon_news_arrw.png);
+    background-size: 10px 14px;
+    background-position: right 2px center;
+    background-repeat: no-repeat;
+    padding: 0 24px 0 0;
+
+}
+.glossary .glossary_list dd a:hover{
+    background-position: right 0px center;
+    text-decoration: underline;
+}
+
+.glossary_btn{
+    width: 400px;
+    height: 54px;
+    margin: 60px auto 0;
+    max-width: 100%;
+}
+.glossary_btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 1px solid #cc0022;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background-image: url(/rd/image/top/icon_news_arrw.png);
+    background-repeat: no-repeat;
+    background-size: 10px 14px;
+    background-position: right 20px center;
+    padding: 14px 0 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+}
+.glossary_btn a:hover{
+    background-image: url("/rd/image/top/career_btn_arrow.png");
+    background-color: #cc0022;
+    color: #fff;
+}
+.related_links{
+    padding: 0 0 70px;
+
+}
+.related_links ul {
+    display: flex;
+    width: 1275px;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.related_links ul li + li{
+    margin-left: 40px;
+}
+.related_links ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    padding: 0 17px 0 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.related_links ul li a:hover{
+    text-decoration: underline;
+}
+.open_innovation{
+    padding: 55px 0 40px;
+    background-image: url("/rd/image/top/open_bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+}
+.careers{
+    padding: 100px 0 40px;
+    background-image: url("/images/careers_bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.open-careers_flex{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.open_innovation .open-careers_flex{
+    flex-direction: row-reverse;
+}
+.open-careers_flex .cntbox{
+    width: 638px;
+    height: 324px;
+    max-width: 100%;
+    background-color: rgba(255,255,255,.9);
+    position: relative;
+    padding: 48px 0 0;
+    margin: 160px 0 0;
+    box-sizing: border-box;
+}
+.open_innovation .imgbox{
+    margin-left: -160px;
+}
+.open_innovation .cntbox{
+    width: 645px;
+    margin-right: -10px;
+}
+.open-careers_flex .imgbox img{
+    width: 798px;
+    height: 534px;
+}
+.open-careers_flex .imgbox .sp{
+    display: none;
+}
+.careers .cntbox{
+    margin-left: -160px;
+}
+.open-careers_ttl{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+.open-careers_txt{
+    font-size: 15px;
+    text-align: center;
+    line-height: 2;
+}
+.open-careers_txt .sp{
+    display: none;
+}
+
+.open-careers_btn{
+    width: 400px;
+    height: 54px;
+    margin: 35px auto 0;
+    max-width: 100%;
+}
+.open-careers_btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #cc0022;
+    color: #fff !important;
+    border: 1px solid #cc0022;
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background-image: url("https://www.hitachi.com/rd/image/top/career_btn_arrow.png") !important;
+    background-repeat: no-repeat;
+    background-size: 10px 14px;
+    background-position: right 20px center;
+    padding: 14px 0 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+}
+.open-careers_btn a:hover{
+    background-color: #fff;
+    color: #cc0022 !important;
+    background-image: url("https://www.hitachi.com/rd/image/top/icon_news_arrw.png") !important;
+}
+
+.OptionWideRWD .pickup .GridSet,
+.OptionWideRWD .research_area .GridSet,
+.OptionWideRWD .open_innovation .GridSet,
+.OptionWideRWD .careers .GridSet,
+.OptionWideRWD .information .GridSet,
+.OptionWideRWD .glossary .GridSet,
+.OptionWideRWD .related_links .GridSet{
+    margin: auto;
+    /*padding: 0;*/
+}
+
+.RdTopContents .Head2Title {
+    box-sizing: border-box;
+}
+.RdTopContents.contentsWidth {
+    max-width: 965px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1304px) and (min-width: 995px){
+    .OptionWideRWD .pickup .Grid4 ,
+    .OptionWideRWD .research_area .Grid4 {
+        /*padding: 0 3% 0;*/
+        padding: 0;
+    }
+    .pickup_ContentsBoxArea .ContentsBox{
+        width: calc( ( 100% - 6% ) / 4);
+        margin-right: 2%;
+        margin-bottom: 40px;
+    }
+    .research_ContentsBoxArea .ContentsBox{
+        width: calc( (100% - 6%) / 4);
+        margin-right: 3%;
+    }
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(4),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(5),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(6){
+        margin-right: 2%;
+    }
+/*------------------- IE11 -------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(4),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(5),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(6){
+        margin-right: 1.9%;
+    }
+    
+    /*.glossary_out{
+        padding: 0 15px;
+    }*/
+    .glossary .glossary_list dd{
+        width: calc( 25% - 32px);
+    }
+    .related_links ul{
+        padding: 0 15px;
+    }
+    
+    .open-careers_flex .cntbox{
+        width: 50%;
+        padding: 45px 5% 40px;
+        height: 350px;
+        margin-top: 12vw;
+    }
+    .careers{
+        padding: 55px 0 40px;
+        margin-top: 45px;
+    }
+
+    
+}
+
+@media screen and (max-width: 994px){
+    /*.OptionWideRWD #Contents {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .OptionWideRWD .GridSet {
+        margin: 0 0 0 0;
+        padding: 0 15px; 
+    }
+    .OptionWideRWD .Grid4{
+        padding: 0 0 0 0;
+    }
+    .contentsWidth{
+        padding: 0 15px;
+    }*/
+    .pickup_ContentsBoxArea .ContentsBox{
+        width: calc( ( 100% - 6% ) / 4);
+        margin-right: 2%;
+        margin-bottom: 40px;
+    }
+    .research_ContentsBoxArea .ContentsBox{
+        width: calc( (100% - 6%) / 4);
+        margin-right: 3%;
+    }
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(4),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(5),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(6){
+        margin-right: 2%;
+    }
+/*------------------- IE11 -------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(4),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(5),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(6){
+        margin-right: 1.9%;
+    }
+    .research_ContentsBoxArea .ContentsTitle{
+        line-height: 1.2;
+    }
+    /*.glossary_out{
+        padding: 0 15px;
+    }*/
+    .glossary .glossary_list dd{
+        width: calc( 33.333% - 32px);
+    }
+    .related_links ul{
+        padding: 0 0;
+    }
+    .open-careers_flex .cntbox{
+        width: 50%;
+        padding: 45px 5% 40px;
+        height:350px;
+        margin-top: 12vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .open-careers_txt{
+        font-size: 14px;
+    }
+    .open_innovation{
+        background-position: right 40% top;
+    }
+    .careers{
+        background-position: left 40% top;
+        background-size: auto 100%;
+        padding: 55px 0 40px;
+        margin-top: 45px;
+    }
+    
+    /*.OptionWideRWD .pickup .GridSet, 
+    .OptionWideRWD .research_area .GridSet, */
+/*  .OptionWideRWD .open_innovation .GridSet,
+    .OptionWideRWD .careers .GridSet, */
+    /*.OptionWideRWD .information .GridSet, 
+    .OptionWideRWD .glossary .GridSet, 
+    .OptionWideRWD .related_links .GridSet{
+    padding: 0 15px;
+    }*/
+    .RdTopContents h2 + .Grid4 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1304px) and (min-width: 768px){
+
+/*------------------- IE11 -------------------*/
+    
+    _:-ms-lang(x)::-ms-backdrop,
+    .open-careers_flex{
+        display: block;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open-careers_flex::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open-careers_flex .imgbox{
+        width: calc( 50% + 160px);
+    
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open_innovation .imgbox{
+        float: right;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .careers .imgbox{
+        float: left;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open-careers_flex .cntbox{
+        margin-top: 0;  
+        position: relative;
+        top: 12vw;
+        display: block;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open-careers_flex{
+        margin-bottom: 10vw;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .open_innobation .cntbox{
+        float: left;
+    }
+    _:-ms-lang(x)::-ms-backdrop,
+    .careers .cntbox{
+        float: right;
+    }
+}
+
+@media screen and (max-width: 767px){
+    
+    .mv .mv_img .sp{
+        display: block;
+    }
+    .mv .mv_img{
+        background-image: none;
+    }
+    .mv .mv_wrap{
+        min-height: inherit;
+        background-color: #ff0026;
+        padding: 20px 3.1% 27px;
+    }
+    .mv .mv_txt{
+        position: static;
+        transform: none;
+        font-size:32px;
+        line-height: 1.18;
+    }
+    .mv .search_box{
+        margin-top: 0;
+        padding: 20px 10px;
+    }
+    .mv .search_form{
+        background-size: 17px;
+        padding: 4px 4px 4px 36px;
+        background-position: left 11px center;
+    }
+    
+    .mv .search_form input{
+        font-size: 14px;
+        width: calc( 100% - 82px);
+        padding: 4px 0px;
+    }
+    .mv .search_form input::placeholder{
+        font-size: 14px;
+    }
+    .mv .search_form button{
+        font-size: 14px;
+        width: 82px;
+        height: 32px;
+    }
+    
+    .pickup.Section .Head2Title, .research_area.Section .Head2Title, .information.Section .Head2Title,
+    .glossary.Section .Head2Title,.related_links.Section .Head2Title{
+        font-size: 22.5px;
+        padding: 10px 0 8px;
+        margin-bottom: 40px;
+    }
+    .pickup_ContentsBoxArea .ContentsTitle,
+    .research_ContentsBoxArea .ContentsTitle{
+        font-size: 16px;
+        padding-bottom: 3px;
+    }
+    .pickup_ContentsBoxArea .ContentsBox p{
+        font-size: 14px;
+        line-height: 1.32;
+    }
+    .pickup.Section {
+        padding: 58px 0 32px;
+    }
+    
+    .pickup_ContentsBoxArea{
+        flex-wrap: wrap;
+    }
+    .pickup_ContentsBoxArea .ContentsBox,
+    .research_ContentsBoxArea .ContentsBox,
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(3), 
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(7), 
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(10){
+        width: calc( (100% - 2%)/2);
+        margin-bottom: 25px;
+        margin-right: 2%;
+    }
+    .pickup_ContentsBoxArea .ContentsBox:nth-of-type(2n),
+    .research_ContentsBoxArea .ContentsBox:nth-of-type(2n){
+        margin-right: 0;
+    }
+    .pickup_ContentsBoxArea .ContentsBox img,
+    .research_ContentsBoxArea .ContentsBox img{
+        width: 100%;
+    }
+    .research_ContentsBoxArea .ContentsTitle .sp{
+        display: block;
+    }
+    .rdInfoTtl{
+        padding: 0;
+    }
+    .rdInfoTtl h3{
+        font-size: 21px;
+    }
+    .rdInfoTtl .FMLinkListStyle{
+        top: 10px;
+    }
+    .rdInfoTtl .FMLinkListStyle li .more a{
+        font-size: 12px;
+        padding: 0 17px 0 0;
+    }
+    .FMLinkListStyle li a:link, .FMLinkListStyle li a:visited{
+        background-size: 7px 10px;
+    }
+
+    .rdInfoLists li{
+        font-size: 12px;
+        padding-bottom: 23px;
+    }
+    .rdInfoLists li .category{
+        font-size: 10px;
+        padding: 2px 5px 1px;
+    }
+    .rdInfoLists li a{
+        margin-top: 8px;
+        display: inline-block;
+    }
+    .glossary .glossary_list dd{
+        width: calc( 50% - 32px);
+    }
+    .related_links ul{
+        display: block;
+    }
+    .related_links ul li + li{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .open_innovation,
+    .careers{
+        background-image: none;
+        background-color: #eeeeee;
+        padding: 0 0 45px;
+    }
+    .careers{
+        margin-top: 60px;
+    }
+    .open-careers_flex .cntbox .open-careers_ttl{
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .open-careers_txt{
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .open-careers_txt .sp{
+        display: block;
+    }
+    .open-careers_txt .pc{
+        display: none;
+    }
+    .open-careers_flex{
+        display: block;
+    }
+    .open-careers_flex .cntbox{
+        width: 100%;
+        margin:-23vw auto auto;
+        width: 93%;
+        padding: 35px 0 45px;
+    }
+    .open-careers_flex .imgbox{
+        margin: auto;
+        width: 100%;
+    }
+    .open-careers_flex .imgbox .sp{
+        display: block;
+    }
+    .open-careers_flex .imgbox .pc{
+        display: none;
+    }
+    .open-careers_btn {
+        height: 46px;
+        margin: 23px auto 0;
+        padding: 0 11.5%;
+        box-sizing: border-box;
+        
+    }
+    .open-careers_btn a{
+        padding: 10px 0 0;
+    }
+    
+    .Section.research_area{
+        padding-bottom: 30px;
+    }
+    .information{
+        padding: 55px 0 30px;
+    }
+}
+@media screen and (max-width: 580px){
+    
+    .glossary.Section {
+        padding-bottom: 60px;
+    }
+    
+    .glossary_area {
+        padding: 25px 8px 0;
+    }
+    .glossary .glossary_ttl{
+        font-size: 13px;
+        padding: 0 0 10px;
+    }
+    
+    .glossary .glossary_list{
+        padding: 0;
+    }
+    
+    .glossary .glossary_list dt{
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        padding-top: 2px;
+        box-sizing: border-box;
+    }
+    .glossary .glossary_list dd{
+        width: calc( 100% - 24px);
+        font-size: 14px;
+        padding: 1px 0 30px 10px;
+        min-height: inherit;
+    }
+    .glossary .glossary_list dd a{
+        display: block;
+        background-size: 7px 10px;
+    }
+    .glossary_btn{
+        width: 267px;
+        height: 50px;
+        margin: 30px auto 0;
+    }
+    .glossary_btn a{
+        font-size: 14px;
+        padding: 12px 0 0;
+        background-size: 7px 10px; 
+    }
+    .related_links ul li a{
+        font-size: 14px;
+    }
+    .open-careers_btn a {
+        font-size: 14px;
+        padding: 10px 0 0;
+        background-size: 7px 10px;
+    }
+}
+

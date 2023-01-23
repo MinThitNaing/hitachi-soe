@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+.TopBrandingAreaInner {
+	position: relative;
+	width: 100%;
+	height: 568px;
+	min-width: 320px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.TopBrandingSlide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+	display: block;
+}
+
+.TopBrandingSlide:not(:first-child) {
+	display: none;
+}
+
+.TopBrandingSlide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.TopBrandingControl {
+	position: absolute;
+	right: calc((100vw - 1275px) / 2);
+	bottom: 15px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.TopBrandingControl.Bottom {
+	right: auto;
+	bottom: 51px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.TopBrandingDots {
+	margin-right: 4px;
+}
+
+.TopBrandingDots > button,
+.TopBrandingBtnStop,
+.TopBrandingBtnPlay {
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+	line-height: 1;
+	color: transparent;
+	width: 20px;
+	height: 20px;
+	outline: 0;
+	cursor: pointer;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+	background-color: transparent;
+	border: 0;
+}
+
+.TopBrandingDots > button:hover,
+.TopBrandingBtnStop:hover,
+.TopBrandingBtnPlay:hover {
+	opacity: 0.8;
+}
+
+.TopBrandingDots,
+.TopBrandingBtnStop,
+.TopBrandingBtnPlay {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.TopBrandingDots > button::before {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+.TopBrandingDots > button.active::before {
+	background-color: #c02;
+}
+
+.TopBrandingControl > .TopBrandingBtnStop::before {
+	content: "";
+	position: absolute;
+	top: calc(50% - 12px / 2);
+	left: calc(50% - 5px);
+	width: 3px;
+	height: 12px;
+	background-color: #fff;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+.TopBrandingControl > .TopBrandingBtnStop::after {
+	content: "";
+	position: absolute;
+	top: calc(50% - 12px / 2);
+	right: calc(50% - 5px);
+	width: 3px;
+	height: 12px;
+	background-color: #fff;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+.TopBrandingControl > .TopBrandingBtnStop.active::before,
+.TopBrandingControl > .TopBrandingBtnStop.active::after {
+	background-color: #c02;
+}
+
+.TopBrandingControl > .TopBrandingBtnPlay::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: calc(50% - (6px * 1.7320508) / 2);
+	left: calc(50% - (6px * 1.7320508) / 2);
+	border-style: solid;
+	border-width: 6px 0 6px calc(6px * 1.7320508);
+	filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, .6));
+	border-top-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	border-left-color: #fff;
+}
+
+.TopBrandingControl > .TopBrandingBtnPlay.active::before {
+	border-left-color: #c02;
+}
+
+
+.TopBrandingBtnPrev,
+.TopBrandingBtnNext {
+	cursor: pointer;
+	position: absolute;
+	display: none;
+	width: 30px;
+	height: 30px;
+	box-sizing: border-box;
+	filter: drop-shadow( 2px 2px 4px rgba(0, 0, 0, .6));
+	background-color: transparent;
+	border: 0;
+	overflow: visible;
+}
+
+.TopBrandingBtnPrev {
+	top: 50%;
+	left: calc((100vw - 1275px) / 2 + 10px);
+	transform: translate(0, -50%);
+}
+
+.TopBrandingBtnNext {
+	top: 50%;
+	right: calc((100vw - 1275px) / 2 + 10px);
+	transform: translate(0, -50%);
+}
+
+.TopBrandingBtnPrev::after,
+.TopBrandingBtnNext::after {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.TopBrandingBtnPrev::after {
+	border-left: 6px solid #fff;
+	border-bottom: 6px solid #fff;
+	transform: rotate(45deg);
+	left: 4px;
+	top:0;
+}
+
+.TopBrandingBtnNext::after {
+	border-right: 6px solid #fff;
+	border-top: 6px solid #fff;
+	transform: rotate(45deg);
+	right: 4px;
+	top:0;
+}
+
+.TopBrandingBtnPrev:hover,
+.TopBrandingBtnNext:hover {
+	opacity: 0.8;
+}
+
+.TopBrandingTitle {
+	position: relative;
+	padding: 0 15px;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.TopBrandingTitle img {
+	width: 810px;
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+.TopBrandingTitle .TextStyle1 {
+	display:block;
+	font-size:16px;
+	text-shadow:1px 1px 1px #000e1d;
+	line-height:1.5;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 138px;
+}
+
+.TopBrandingLink {
+	box-sizing: border-box;
+	position: absolute;
+	bottom:80px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1;
+}
+
+.TopBrandingLink a {
+	position: relative;
+	display: inline-block;
+	min-width: 120px;
+	margin: 0;
+	text-align: center;
+	font-size: 90%;
+	padding: 15px 20px 15px 20px;
+	background-color: #c02;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 50rem;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+}
+
+/*
+.TopBrandingLink a:hover {
+	opacity: 0.9;
+}
+*/
+
+.TopBrandingLink a span::after {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	transform: rotate(45deg);
+	margin-left: 6px;
+}
+
+.TopBrandingLink a span {
+	white-space: nowrap;
+}
+
+/*
+.TopBrandingLink a span {
+	display: inline-block;
+	transform: skewX(45deg);
+	white-space: nowrap;
+}
+
+.TopBrandingLink a::before {
+	position: absolute;
+	content: "";
+	left: -18px;
+	top: 0;
+	width: 20px;
+	height: 100%;
+	border-left: 18px solid #d18187;
+}
+
+.TopBrandingLink a::after {
+	position: absolute;
+	content: "";
+	left: -30px;
+	top: 0;
+	width: 32px;
+	height: 100%;
+	border-left: 12px solid #e8c0c3;
+}
+*/
+
+@media screen and (max-width: 1304px) {
+	.TopBrandingControl { right: 10px; }
+	.TopBrandingBtnPrev { left: 20px; }
+	.TopBrandingBtnNext { right: 20px; }
+}
+  
+@media screen and (max-width: 1039px) {
+	.TopBrandingControl { 
+		right: auto;
+		bottom: 51px;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.TopBrandingAreaInner {
+		/*height: 500px;  2022.07.06*/
+		height: 430px;
+	}
+
+	.TopBrandingBtnPrev { display: none!important; }
+	.TopBrandingBtnNext { display: none!important; }
+
+	.TopBrandingTitle {
+		padding: 0 15px;
+	}
+
+	.TopBrandingTitle img {
+		width: 700px;
+		/*margin-bottom: 50px;  2022.07.06*/
+		margin-bottom:90px;
+	}
+
+	.TopBrandingLink {
+		margin-top: 10px;
+	}
+	
+	.TopBrandingBtnPrev,
+	.TopBrandingBtnNext {
+		width: 24px;
+		height: 24px;
+	}
+
+	.TopBrandingBtnPrev {
+		left: 10px;
+	}
+
+	.TopBrandingBtnNext {
+		right: 10px;
+	}
+
+	.TopBrandingBtnPrev::after {
+		border-width: 4px;
+	}
+	
+	.TopBrandingBtnNext::after {
+		border-width: 4px;
+	}
+	
+	.TopBrandingLink a{
+	font-size:80%;
+	padding:8px 20px;
+	}
+	.TopBrandingLink a.txtline2{
+	line-height:150%;
+	}
+}
+
+@media screen and (max-width: 579px) {
+
+}
+
+@media screen and (max-width: 399px) {
+	.TopBrandingAreaInner {
+		/*height: 420px;  2022.07.06*/
+		height: 380px;
+	}
+}
+
+@media screen and (max-width: 346px) {
+}

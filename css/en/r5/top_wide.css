@@ -1,0 +1,1552 @@
+@charset "UTF-8";
+
+/* **************************************************
+
+Name: top_wide.css
+
+Description: CSS for Hitachi.co.jp top page
+
+Create: 2019.05
+LastModify: 2022.07.12
+
+Copyright 2021 Hitachi, Ltd.
+
+***************************************************** */
+
+
+input, textarea { font-family: Arial,Helvetica,sans-serif; }
+
+.fixed {
+	position: fixed !important;
+	top: 0;
+	margin-top: 0 !important;
+	margin-bottom: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+.top_global_fixed .TopBrandingImgStyle  { margin-top: 66px;}
+
+
+
+
+
+
+/* [t2] Branding Image
+=========================================================================================== */
+
+.TopBrandingImgStyle {
+  position: relative;
+  min-width: 1275px;
+  overflow: hidden;
+  background-color: #000;
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.TopBrandingImgStyle.bgWhite {
+  background-color: #fff;
+}
+.TopBrandingImg img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  width: auto;
+  height: 100%;
+}
+.TopBrandingInner {
+  position: relative;
+  width: 1275px;
+  /* height: 600px; */
+  margin: 0 auto;
+  padding: 42px 15px 30px 15px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.TopBrandingInner .ImgOnlyStyle {
+   margin-bottom: 60px;
+}
+.TopBrandingInner .TextSet {
+/*
+  width: 94%;
+  width: -webkit-calc(100% - 30px);
+  width: calc(100% - 30px);
+*/
+}
+.TopBrandingInner .TextSet * {
+  color: #fff;
+}
+.TopBrandingInner .TextSet .Title {
+  font-size: 250%;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+.TopBrandingInner .TextSet .SubTitle {
+  font-size: 150%;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+.TopBrandingInner .TextSet .TextStyle1 {
+/*margin-top: 20px;*/
+display:block;
+font-size:16px;
+text-shadow:1px 1px 1px #000e1d;
+line-height:1.5;
+}
+.TopBrandingInner img {
+  max-width: 100%;
+  height: auto;
+}
+ .Personalize .TopBrandingInner {
+	width:1275px;
+}
+ .Personalize .TopBrandingInner .TextSet{
+   padding-top:11.5%;
+   padding-bottom:11.5%;
+}
+
+.TopBrandingButtonStyle {
+margin-left: 55px;
+margin-bottom: 40px;
+}
+.TopBrandingButtonStyle a {
+  position: relative;
+	display: inline-block;
+	min-width: 120px;
+	min-height: 18px;
+	margin: 0;
+	text-align: center;
+	font-size: 90%;
+	line-height: 130%;
+	padding: 16px 20px;
+	background-color: #a2030f;
+	color: #fff;
+	text-decoration: none;
+  transform: skewX(-45deg);
+}
+.hsif .TopBrandingButtonStyle a {
+  min-width: 200px;
+  transform: none;
+  background-color: #FC0014;
+  background-image: url(../../../image/en/r1/icon/icon_link_right_l_white_hd.gif);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 16px 16px;
+  -moz-background-size: 16px 16px;
+  -webkit-background-size: 16px 16px;
+  -o-background-size: 16px 16px;
+  -ms-background-size: 16px 16px;
+  padding-right: 22px;
+}
+.TopBrandingButtonStyle a::before {
+  position: absolute;
+  content: "";
+  left: -18px;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-left: 18px solid #d18187;
+}
+.TopBrandingButtonStyle a::after {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  border-left: 12px solid #e8c0c3;
+}
+.hsif .TopBrandingButtonStyle a::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-left: none;
+}
+
+.hsif .TopBrandingButtonStyle a::after {
+    position: absolute;
+    content: none;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-left: none;
+}
+.TopBrandingButtonStyle a span {
+  display: inline-block;
+  transform: skewX(45deg);
+}
+.hsif .TopBrandingButtonStyle a span {
+  transform: none;
+}
+.TopBrandingButtonStyle a:link,
+.TopBrandingButtonStyle a:visited {
+	text-decoration: underline;
+}
+.TopBrandingButtonStyle.CenterAdjust {
+  margin-left: 30px;
+}
+.hsif .TopBrandingButtonStyle.CenterAdjust {
+    margin-left: 0;
+}
+.TopBrandingButtonStyle.RightAdjust {
+  margin-left: 0;
+  margin-right: 30px;
+}
+.TopBrandingButtonStyle.green a {
+	background-color: #86c87b;
+}
+.TopBrandingButtonStyle.green a,
+.TopBrandingButtonStyle.green a span {
+	color: #000;
+}
+.TopBrandingButtonStyle.green a::before {
+	border-color: #c3e4bd;
+}
+.TopBrandingButtonStyle.green a::after {
+	border-color: #e6e9ed;
+}
+.TopBrandingButtonStyle.white a {
+	background-color: #fff;
+}
+.TopBrandingButtonStyle.white a,
+.TopBrandingButtonStyle.white a span {
+	color: #000;
+}
+.TopBrandingButtonStyle.white a::before {
+	border-color: #bfbfbf;
+}
+.TopBrandingButtonStyle.white a::after {
+	border-color: #ebebeb;
+}
+.TopBrandingButtonStyle.blue a {
+	background-color: #38338f;
+}
+.TopBrandingButtonStyle.blue a::before {
+	border-color: #9c99c7;
+}
+.TopBrandingButtonStyle.blue a::after {
+	border-color: #e8e7f2;
+}
+
+/* ------InformArea ------ */
+.InformArea{
+display: block;
+box-sizing: border-box;
+background-color: #fff;
+width:100%;
+border-bottom:1px solid #e5e5e5;
+}
+.InformArea .wrap{
+display: block;
+max-width:1275px;
+margin:auto;
+}
+.InformArea ul{
+margin:0;
+font-weight:bold;
+display: table;
+}
+.InformArea ul li{
+height: 45px;
+padding: 0 15px;
+display: table-cell;
+vertical-align:middle ;
+}
+
+
+/* Search Area
+=========================================================================================== */
+.TopSearchArea {
+  position: relative;
+  max-width: 840px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  -webkit- transform: translateY(-50%);
+  padding: 20px;
+  background-color: rgba(238,238,238,0.9);
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  z-index: 69;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.TopSearchArea.fixed {
+  max-width: 100%;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  border-radius: 0;
+}
+.top_global_fixed.top_global_show .TopSearchArea.fixed,
+.top_search_fixed.top_global_show .TopSearchArea.fixed {
+  top: 66px;
+}
+.TopSearchArea .TopSearchInner {
+  max-width: 803px;
+  margin: 0 auto;
+}
+.TopSearchArea form {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.TopSearchArea .SearchTextSet {
+  float: left;
+  position: relative;
+  width: 84%;
+  margin: 0;
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.TopSearchArea .SearchBtn {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+.TopSearchArea .SearchTextBox {
+  margin: 0 0 0 35px;
+  width: 90%;
+  width: -webkit-calc(100% - 45px);
+  width: calc(100% - 45px);
+  padding: 4px 0 4px 10px;
+  border-left: 1px solid #ccc;
+}
+.TopSearchArea input[type="text"]{
+  font-size: 90%;
+}
+.TopSearchArea input[type="submit"]{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  float: right;
+  width: 14%;
+  border-radius: 5px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #b1000e;
+  padding: 10px 0;
+  border-style: none;
+  cursor: pointer;
+}
+
+
+/* Topics
+=========================================================================================== */
+
+.TopicsArea {
+  position: relative;
+  background: #e6e6e6 url(../../../image/en/r5/top_wide/topics_bg.jpg) no-repeat center bottom;
+  background-size: cover;
+  z-index: 1;
+  margin-top: -84px;
+}
+.TopicsArea .Inner {
+  margin: 0 auto;
+  max-width: 1275px;
+  padding: 60px 0 1px;
+}
+.TopicsArea h2 {
+	margin: 0 0 20px;
+	padding: 0;
+  background: none;
+	font-size: 230%;
+	font-weight: bold;
+	color: #fff;
+	line-height: 130%;
+}
+.TopicsArea h3 {
+	margin: 0 0 20px;
+  color: #4d4d4d;
+}
+.TopicsArea p {
+	color: #fff;
+}
+.TopicsArea p.SlideButtonSet.active {
+  width: 87%;
+  width: -webkit-calc(100% - 100px);
+  width: calc(100% - 100px);
+}
+
+/* Rotation Banner
+=========================================================================================== */
+
+.FatBanner {
+	background-color: transparent;
+  border-top: none;
+  margin-left: -25px;
+  margin-right: -5px;
+}
+.FatBanner li {
+	width: 425px;
+  margin-left: 0;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.FatBanner a {
+  text-align: center;
+}
+.FatBanner .img {
+  width: 86.6703%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  z-index: 2;
+}
+.FatBanner img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.FatBanner a:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all .3s ease-out;
+}
+.FatBanner .textSet {
+  margin-top: -24px;
+  padding: 40px 0 10px;
+  background-color: #040000;
+  color: #fff;
+  text-align: left;
+  border-bottom: 10px solid #363333;
+  border-radius: 10px 0 10px 0;
+  z-index: 1;
+}
+.FatBanner a:hover,
+.FatBanner a:active {
+  -webkit-filter: drop-shadow(0 -5px 5px rgba(0,0,0,0.25)));
+  filter: drop-shadow(0 -5px 5px rgba(0,0,0,0.25));
+}
+.FatBanner a:hover .textSet,
+.FatBanner a:active .textSet {
+	background-color: #b1000e;
+  border-color: #7b0001;
+}
+.FatBanner .textSet span {
+  height: auto;
+}
+.FatBanner .textSet .category {
+  display: inline-block;
+  padding: 0 0 10px 24px;
+  font-size: 67%;
+  line-height: 100%;
+  border-bottom: 1px solid #fff;
+}
+.FatBanner .textSet .title {
+  display: block;
+	background-image: url(../../../image/en/r1/icon/icon_link_right_l_white_hd.gif);
+	background-repeat: no-repeat;
+	background-position: right 15px center;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px;
+}
+.FatBanner a:link .title,
+.FatBanner a:visited .title {
+  padding: 10px 50px 10px 24px;
+	background-color: transparent;
+	border-right: solid 3px transparent;
+}
+.FatBanner a:hover .title,
+.FatBanner a:active .title {
+  padding: 10px 52px 10px 24px;
+	background-color: transparent;
+	border-right: solid 1px transparent;
+}
+.FatBanner .textSet .title span {
+  display: table-cell;
+  font-size: 90%;
+  line-height: 160%;
+}
+
+#TopicsRotationBanner {
+	position: relative;
+
+}
+#TopicsRotationBanner .FatBanner {
+	position: relative;
+	width: 1275px;
+	margin: 0 auto;
+	padding: 0;
+	border-top: 0 none;
+}
+
+
+#TopicsRotationBanner ul {
+	position: relative;
+	width: 9665px;
+}
+
+
+@media screen and (max-width: 1304px) {
+	#TopicsRotationBanner .FatBanner {
+		width: 100%;
+	}
+	#TopicsRotationBanner ul {
+		width: 1000%;
+		max-width: 12750px;
+	}
+	#TopicsRotationBanner li {
+		width: 3.33333333%;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	#TopicsRotationBanner .FatBanner {
+		width: 100%;
+	}
+	#TopicsRotationBanner ul {
+		width: 100%;
+		max-width: 100%;
+	}
+	#TopicsRotationBanner li {
+		width: 100%;
+		float:none;
+    padding-left: 0;
+	}
+	#TopicsRotationBanner .FatBanner a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+#TopicsRotationBanner #SlideButton {
+  position: absolute;
+  top: -45px;
+  right: 0;
+	width: 112px;
+	overflow: hidden;
+}
+#TopicsRotationBanner #SlideButton div {
+	float: left;
+	width: 34px;
+	height: 34px;
+	overflow: hidden;
+}
+#TopicsRotationBanner #SlideButtonStop,
+#TopicsRotationBanner #SlideButtonRight {
+	margin-left: 5px;
+}
+#TopicsRotationBanner #SlideButton div a {
+	display: block;
+	width: 34px;
+	height: 68px;
+}
+#TopicsRotationBanner #SlideButton div a:link,
+#TopicsRotationBanner #SlideButton div a:visited {margin-top: 0;}
+#TopicsRotationBanner #SlideButton div a:hover,
+#TopicsRotationBanner #SlideButton div a:active {margin-top: -34px;}
+
+
+/* TOP Highlights (XML)
+=========================================================================================== */
+.HighlightTitle {
+	display: table;
+	margin-bottom: 20px;
+}
+.HighlightTitle .col1 {
+	width: 215px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+.HighlightTitle .col2 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+.HighlightTitle h2 {
+	margin-bottom: 0;
+	color: #595959;
+}
+.Highlightslink a {
+	position: relative;
+	padding-right: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 110%;
+	color: #595959;
+}
+.Highlightslink a::before {
+	content: "";
+	position: absolute;
+	right: 2px;
+	top: 4px;
+	width: 7px;
+	height: 7px;
+	border-top: solid 2px #595959;
+	border-right: solid 2px #595959;
+	transform: rotate(45deg);
+}
+.Highlightslink a:hover {
+	text-decoration: underline;
+}
+.Highlightslink a:hover::before {
+	right: 0px;
+}
+
+.HighlightsMenu li {
+	float: left;
+	width: 23.764705882%;
+	margin-right: 1.647058823%;
+}
+.HighlightsMenu li:nth-child(4n) { margin-right: 0; }
+.HighlightsMenu:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+*:first-child+html .HighlightsMenu { zoom: 1; }
+.HighlightsMenu li a {
+	display: block;
+	text-decoration: none;
+}
+.HighlightsMenu li a img {
+	width: 100%;
+	height: auto;
+    transition: all .2s ease-out;
+}
+.HighlightsMenu li a .HighlightsImg {
+	position: relative;
+	bottom: -20px;
+	z-index: 2;
+	display: block;
+	width: calc(100% - 26px);
+	margin: 0 auto;
+	overflow: hidden;
+}
+.HighlightsMenu li a .HighlightsImg img {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.HighlightsMenu li a .HighlightsText {
+	position: relative;
+	display: block;
+	padding: 35px 13px 25px 13px;
+	border-bottom: 10px solid #363333;
+	border-radius: 10px 0 10px 0;
+	background-color: #040000;
+	font-size: 90%;
+	color: #ffffff;
+    transition: all .2s ease-out;
+}
+.HighlightsMenu li a .HighlightsText .HtIn {
+    display: -webkit-box;
+	max-height: 100px;
+	text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.HighlightsMenu li a .HighlightsText::before {
+	content: "";
+	position: absolute;
+	right: 13px;
+	bottom: 10px;
+	width: 50px;
+	height: 1px;
+	background-color: #ffffff;
+	font-size: 0;
+}
+.HighlightsMenu li a .HighlightsText::after {
+	content: "";
+	position: absolute;
+	right: 13px;
+	bottom: 14px;
+	width: 10px;
+	height: 1px;
+	background-color: #ffffff;
+	transform: rotate(45deg);
+}
+
+.HighlightsMenu li a:hover .HighlightsText {
+	background-color: #b1000e;
+	border-bottom: 10px solid #7b0001;
+}
+.HighlightsMenu li a:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+@media screen and (max-width: 767px) {
+	.HighlightTitle {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.HighlightTitle .col1 {
+		width: auto;
+		display: block;
+		margin-bottom: 10px;
+	}
+	.HighlightTitle .col2 {
+		display: block;
+	}
+
+	.HighlightsMenu li {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.HighlightsMenu li a {
+		position: relative;
+		display: table;
+		width: 100%;
+		padding: 15px;
+		border-bottom: 10px solid #363333;
+		border-radius: 10px 0 10px 0;
+		background-color: #040000;
+		font-size: 90%;
+		color: #ffffff;
+		transition: all .2s ease-out;
+		box-sizing: border-box;
+	}
+	.HighlightsMenu li a:hover {
+		background-color: #b1000e;
+		border-bottom: 10px solid #7b0001;
+	}
+	.HighlightsMenu li a .HighlightsImg {
+		display: table-cell;
+		bottom: auto;
+		width: 100px;
+		margin: auto;
+		text-align: left;
+		vertical-align: middle;
+	}
+	.HighlightsMenu li a .HighlightsImg img {
+		width: 125px;
+		height: auto;
+	}
+	.HighlightsMenu li a .HighlightsText {
+		display: table-cell;
+		padding: 0 0 0 15px;
+		border-bottom: none;
+		border-radius: 0;
+		background-color: transparent;
+		text-align: left;
+		vertical-align: middle;
+	}
+	.HighlightsMenu li a .HighlightsText::before {
+		right: 0;
+		bottom: -9px;
+	}
+	.HighlightsMenu li a .HighlightsText::after {
+		right: 0;
+		bottom: -5px;
+	}
+	.HighlightsMenu li a:hover .HighlightsText {
+		background-color: transparent;
+		border-bottom: none;
+	}
+}
+
+
+/* [--] Button
+=========================================================================================== */
+
+.ProductsButtonList {
+  margin-left: -20px;
+}
+.ProductsButtonList::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.ProductsButtonList li {
+  float: left;
+	width: 33%;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.ProductsButtonList li:first-child {
+  width: 67%;
+}
+
+.ProductsButtonList a {
+	display: block;
+	margin: 0 0 15px;
+	padding: 20px;
+  width: 100%;
+	font-size: 90%;
+	line-height: 130%;
+  text-align: left;
+	text-decoration: none;
+  color: #4d4d4d;
+  background-image: url(../../../image/en/r1/icon/icon_link_right_l_gray_hd.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px;
+	background-color: #fff;
+  border-radius: 5px;
+  border-left: #b1000e solid 10px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+.ProductsButtonList a:link,
+.ProductsButtonList a:visited {
+	border-right: solid 3px #fff;
+}
+.ProductsButtonList a:hover,
+.ProductsButtonList a:active {
+	padding-right: 22px;
+	border-right: solid 1px #fff;
+}
+
+
+/* Contents Area
+=========================================================================================== */
+.ContentsInnner {
+ max-width: 1060px;
+ margin: 0 auto;
+ padding-top: 70px;
+}
+.TopicsArea .ContentsInnner {
+ padding-top: 40px;
+ padding-bottom: 75px;
+}
+
+/* ------ Heading ------ */
+h2.TopStyle {
+	margin: 0 0 20px;
+	padding: 0;
+	background: none;
+}
+h2.TopStyle > span {
+	padding: 0;
+	background-color: transparent;
+}
+h2.TopStyle img,
+.TopStyle h2 img {
+  vertical-align: middle;
+}
+h2.TopStyle .importantIcon,
+.TopStyle h2 .importantIcon{
+  color: #fff;
+  background-color:#f2f2f2;
+  padding: 0;
+  margin: 0;
+  width: 43px;
+  height: 43px;
+  line-height: 43px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.LV1LinkSet.TopStyle {
+	margin: 0 0 20px;
+	padding: 0;
+	background: none;
+}
+.LV1LinkSet.TopStyle div {
+	padding: 0;
+	background-color: transparent;
+}
+.LV1LinkSet.TopStyle div h2 {
+	background: none;
+}
+.LV1LinkSet.TopStyle div ul li a:link,
+.LV1LinkSet.TopStyle div ul li a:visited {
+  color: #000;
+  background-image: none;
+  padding-right: 0;
+}
+.LV1LinkSet.TopStyle div ul li a:hover,
+.LV1LinkSet.TopStyle div ul li a:active {
+  color: #000;
+  background-image: none;
+  padding-right: 0;
+}
+.LV1LinkSet.TopStyle .importantIcon ~ ul {
+  padding-top: 50px;
+}
+
+
+/* ------ NewsRelease ------ */
+
+.NewsRelease .DateListStyle2 {
+	border-bottom: solid 1px #ddd;
+  margin-bottom: 50px;
+}
+.NewsRelease .DateListStyle2 dt {
+	width: 10em;
+	padding: 15px 0;
+	border-top: solid 1px #ddd;
+}
+.NewsRelease .DateListStyle2 ul {
+	margin: 0 !important;
+}
+.NewsRelease .DateListStyle2 li {
+	padding: 15px 0 !important;
+	border-top: solid 1px #ddd;
+	overflow: hidden;
+}
+.NewsRelease .DateListStyle2 a {
+  display: inline-block;
+  padding-left: 20px;
+	border-left: solid 1px #ddd;
+}
+.NewsRelease .DateListStyle2 span {
+	display: block;
+	float: right;
+	width: 120px;
+	margin-left: 15px;
+}
+.NewsRelease .LinkListStyle1 li a {padding-right: 0;}
+.NewsRelease .LinkListStyle1 li a:hover,
+.NewsRelease .LinkListStyle1 li a:active, {
+	color: #4d4d4d;
+  background: none;
+}
+.NewsRelease .LinkListStyle1 li a:link,
+.NewsRelease .LinkListStyle1 li a:visited {
+	color: #4d4d4d;
+  background: none;
+}
+
+
+/* ------ Button ------ */
+
+.ButtonStyle1.TopStyle a {
+	display: inline-block;
+	min-width: 230px;
+	min-height: 18px;
+	margin: 0 0 30px;
+	text-align: center;
+	font-size: 90%;
+	line-height: 130%;
+	background-image: none;
+	word-break: break-all;
+  border: solid 1px #cccccc;
+  border-radius: 4px;
+}
+.ButtonStyle1.TopStyle a:link,
+.ButtonStyle1.TopStyle a:visited {
+	padding: 20px 30px;
+	background-color: #fff;
+	color: #4d4d4d;
+	text-decoration: none;
+	border-right: solid 1px #cccccc;
+}
+.ButtonStyle1.TopStyle a:hover,
+.ButtonStyle1.TopStyle a:active {
+	padding: 20px 30px;
+	background-color: #cccccc;
+	color: #4d4d4d;
+	text-decoration: none;
+	border-right: solid 1px #cccccc;
+}
+
+.buttonSet { position: relative; }
+.buttonSet .ButtonStyle1 a {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  min-width: 0;
+  margin-bottom: 0;
+  border: none !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+.buttonSet .ButtonStyle1.TopStyle a:hover,
+.buttonSet .ButtonStyle1.TopStyle a:active { text-decoration: underline; }
+
+/* ------ Button 白　 ------ 
+.ButtonStyle1.White{
+margin-bottom: 40px;
+}
+.ButtonStyle1.White a{
+font-size: 120%;
+line-height: 150%;
+min-width: 200px;
+}
+.ButtonStyle1.White a:link,
+.ButtonStyle1.White a:visited{
+	background-image: url(/image/en/r1/icon/icon_link_right_l_gray_hd.gif);
+}
+.ButtonStyle1.White a:link,
+.ButtonStyle1.White a:visited{
+	background-color: #fff;
+	color: #000;
+	border-right: solid 1px #000;
+}
+.ButtonStyle1.White a:hover,
+.ButtonStyle1.White a:active{
+	background-color: #fff;
+	color: #000;
+	border-right: solid 1px #000;
+}
+.ButtonStyle1.White a strong span{
+	color: #000!important;
+}*/
+
+/* Social Account Button
+=========================================================================================== */
+
+#SocialAccountBottom {
+  padding: 0 0 40px;
+	background-color: #fff;
+  border-top: 0 none;
+}
+.OptionWide #SocialAccountBottom ul {
+  min-width: 290px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0 15px;
+  font-size: 90%;
+  text-align: center;
+}
+#SocialAccountBottom ul li {
+  padding: 0 35px;
+  letter-spacing: normal;
+  border-left: solid 1px #ccc;
+}
+#SocialAccountBottom ul li:first-child {
+  border-left: none;
+}
+#SocialAccountBottom a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+#SocialAccountBottom a:hover,
+#SocialAccountBottom a:active {
+  text-decoration: underline;
+}
+#SocialAccountBottom .circle{
+  background-color:#fff;
+  padding: 0;
+  margin: 0 auto 8px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #f00;
+  border-radius: 50%;
+}
+#SocialAccountBottom .SbTwitter .circle { border-color:#1da1f2; }
+#SocialAccountBottom .SbFacebook .circle { border-color:#4d66a6; }
+#SocialAccountBottom .SbYouTube .circle { border-color:#ff0000; }
+#SocialAccountBottom .SbLinkedIn .circle { border-color:#0078ba; }
+#SocialAccountBottom .SbLInstagram .circle { border-color:#d72f84; }
+
+#SocialAccountBottom img {
+  vertical-align: middle;
+}
+
+
+/* Footer List
+=========================================================================================== */
+
+.FooterList {
+	position: relative;
+	z-index: 3;
+	min-width: 1275px;
+	background-color: #000;
+	border-top: solid 1px #fff;
+}
+.FooterListSet {
+	max-width: 1275px;
+	margin: 0 auto;
+	padding: 10px 0 15px;
+	overflow: hidden;
+}
+.FooterList ul {margin: 0;}
+
+.FooterListSet .LinkListStyle6 a:link,
+.FooterListSet .LinkListStyle6 a:visited {
+  color: #fff;
+  background-image: url(../../../image/en/r1/icon/icon_link_right_white_hd.gif);
+}
+.FooterListSet .LinkListStyle6 a:hover,
+.FooterListSet .LinkListStyle6 a:active {
+  color: #fff;
+  background-image: url(../../../image/en/r5/top_wide/icon_link_right_white_hover_hd.gif);
+}
+
+
+
+
+
+/* for RWD
+=========================================================================================== */
+
+/* ------ Rotation Banner ------ */
+
+.OptionRWD.JS #TopicsRotationBanner #SlideButton div a:link,
+.OptionRWD.JS #TopicsRotationBanner #SlideButton div a:visited,
+.OptionRWD.JS #TopicsRotationBanner #SlideButton div a:hover,
+.OptionRWD.JS #TopicsRotationBanner #SlideButton div a:active {margin-top: 0;}
+.OptionRWD.PC #TopicsRotationBanner #SlideButton div a:hover,
+.OptionRWD.PC #TopicsRotationBanner #SlideButton div a:active {margin-top: -34px;}
+
+
+/* for 995px - 1304px
+=========================================================================================== */
+
+@media screen and (min-width: 995px) and (max-width: 1304px) {
+
+  /* ------ Branding Image ------ */
+  
+	.OptionWideRWD .TopBrandingImgStyle { min-width: 320px; }
+	.OptionWideRWD .TopBrandingInner {
+    width: auto;
+    max-width: 1275px;
+  }
+
+
+  /* ------ Topics ------ */
+
+  .OptionWideRWD .TopicsArea .Inner {
+    min-width: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ------ Banner Area ------ */
+
+  .OptionWideRWD .FatBanner ul {padding-right: 0;}
+  .OptionWideRWD .FatBanner li {width: 33.33333%;}
+	.OptionWideRWD .FatBanner a {margin-left: 0;}
+
+  /* --- Footer List --- */
+
+	.OptionWideRWD .FooterList {min-width: 320px;}
+
+	.OptionWideRWD .FooterListSet {
+		width: auto;
+		padding: 10px 15px 15px;
+	}
+
+}
+
+
+
+/* for - 994px
+=========================================================================================== */
+
+@media screen and (max-width: 994px) {
+
+  /* ------ Branding Image ------ */
+  
+	.JS .TopBrandingImgStyle {min-width: 320px;}
+	.JS .TopBrandingInner {
+    width: auto;
+    max-width: 1275px;
+  }
+
+
+  /* ------ Topics ------ */
+
+  .JS .TopicsArea .Inner {
+    min-width: 290px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* ------ Banner Area ------ */
+
+  .JS .FatBanner {
+    min-width: 290px;
+	}
+  .JS .FatBanner ul {
+    padding-right: 0;
+	}
+	.JS .FatBanner li {
+    width: 33.33333%;
+  }
+  .JS .FatBanner a {
+    margin-left: 0;
+    max-width: 404px;
+
+  }
+  .JS .FatBanner img {width: auto;}
+
+	.OptionRWD.JS #TiopicsRotationBanner #SlideButton {padding: 0 15px 0 0;}
+
+  /* --- Footer List --- */
+
+	.JS .FooterList {min-width: 320px;}
+
+	.JS .FooterListSet {
+		width: auto;
+		padding: 10px 15px 15px;
+	}
+
+}
+
+
+
+/* for - 840px
+=========================================================================================== */
+
+@media screen and (max-width: 840px) {
+
+  .JS .TopSearchArea {
+    border-radius: 0;
+  }
+
+}
+
+
+/* for - 767px
+=========================================================================================== */
+
+@media screen and (max-width: 767px) {
+
+  .JS body {
+    background-color: #fff;
+  }
+
+  /* ------ Branding Image ------ */
+  .TopBrandingInner {
+    padding: 30px 15px;
+  }
+  .JS .TopBrandingInner .ImgOnlyStyle{
+    margin-bottom:10px;
+    padding-top:130px;
+  }
+  .TopBrandingButtonStyle {
+    margin: 5px auto 40px 30px;
+		text-align: center;
+  }
+
+  /* ------ Banner Area ------ */
+
+	.JS .FatBanner li { width: 50%; }
+  .JS .FatBanner li:nth-child(3n+1) {clear: inherit;}
+  .JS .FatBanner li:nth-child(2n+1) {clear: inherit;}
+
+
+  /* ------ Button ------ */
+  
+  .JS .ProductsButtonList {
+    margin-left: -15px;
+  }
+  .JS .ProductsButtonList li {
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  /* ------ NewsRelease ------ */
+
+  .JS .NewsRelease {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .JS .NewsRelease .DateListStyle2 {
+		margin-bottom: 30px;
+	}
+  .JS .NewsRelease .DateListStyle2 dt {
+    width: 100%;
+    padding: 15px 15px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .JS .NewsRelease .DateListStyle2 dd {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+	.JS .NewsRelease .DateListStyle2 li {
+		padding: 15px 15px 0 !important;
+		border-top: 0 none;
+	}
+	.JS .NewsRelease .DateListStyle2 a {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  /* ------ Banner Area ------ */
+
+  .OptionRWD.JS #TopRotationBanner #SlideButton {margin: 10px auto -5px;}
+
+
+  /* ------ Social Account Button ------ */
+
+	.OptionRWD.JS #SocialAccountBottom ul {
+		width: auto;
+		height: auto;
+		margin: 0;
+		text-align: center;
+	}
+	.OptionRWD.JS #SocialAccountBottom li {
+    padding: 0 15px;
+	}
+	.OptionRWD.JS #SocialAccountBottom img {
+		width: auto;
+		height: auto;
+	}
+
+
+/* --- Footer List --- */
+
+  .JS .FooterList {border-top: 0 none;}
+
+	.JS .FooterListSet {padding: 0;}
+
+	.JS .FooterListSet .LinkListStyle6 {
+		margin: 0;
+		border-bottom: solid 1px #fff;
+	}
+
+	.JS .FooterListSet .LinkListStyle6 li {
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		border-top: solid 1px #fff;
+	}
+	.JS .FooterListSet .LinkListStyle6 li:nth-child(3) {clear: both;}
+
+	.JS .FooterListSet .LinkListStyle6 li a {
+		position: relative;
+		display: block;
+		padding: 12px 25px 12px 15px;
+		background-image: none !important;
+		text-align: center;
+	}
+	.JS .FooterListSet .LinkListStyle6 li:nth-child(2n+1) a { border-right: solid 1px #fff; }
+
+	.JS .FooterListSet .LinkListStyle6 li a:link,
+	.JS .FooterListSet .LinkListStyle6 li a:visited {
+		color: #fff;
+	}
+	.JS .FooterListSet .LinkListStyle6 li a:hover,
+	.JS .FooterListSet .LinkListStyle6 li a:active {
+		color: #fff;
+		text-decoration: none;
+		background-color: #000;
+	}
+
+	.JS .FooterListSet .LinkListStyle6 li a:after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 16px;
+		height: 16px;
+		top: 50%;
+		margin: -8px 0 0;
+		background-image: url(../../../image/en/r1/icon/icon_link_right_l_white_hd.gif);
+		background-repeat: no-repeat;
+		background-size: 16px 16px;
+		-moz-background-size: 16px 16px;
+		-webkit-background-size: 16px 16px;
+		-o-background-size: 16px 16px;
+		-ms-background-size: 16px 16px;
+	}
+	.JS .FooterListSet .LinkListStyle6 li a:link:after,
+	.JS .FooterListSet .LinkListStyle6 li a:visited:after {right: 7px;}
+	.JS .FooterListSet .LinkListStyle6 li a:hover:after,
+	.JS .FooterListSet .LinkListStyle6 li a:active:after {right: 5px;}
+
+}
+
+
+
+/* for - 579px
+=========================================================================================== */
+
+@media screen and (max-width: 579px) {
+
+  .JS .TopSearchArea .SearchTextSet {
+    float: none;
+    width: 100%;
+  }
+  .JS .TopSearchArea input[type="submit"] {
+    display: none;
+  }
+
+  /* ------ Banner Area ------ */
+
+	.JS .FatBanner li {width: 100%;}
+	.JS .FatBanner li a {margin: 0 auto;}
+
+
+  /* ------ Button ------ */
+
+  .JS .ProductsButtonList {
+    margin-left: 0;
+  }
+  .JS .ProductsButtonList li {
+    width: 100%;
+    padding-left: 0;
+  }
+
+
+  /* ------ Social Account Button ------ */
+	.OptionRWD.JS #SocialAccountBottom .circle{
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+  }
+	.OptionRWD.JS #SocialAccountBottom li {
+    padding: 0 10px;
+	}
+	#SocialAccountBottom a {
+    font-size:70%;
+    }
+	.OptionRWD.JS #SocialAccountBottom .circle img {
+    max-width:20px;
+  }
+  /* ------InformArea ------ */
+  .InformArea {
+      font-size:85%;
+  }
+  /* ------ Button 白 ------ 
+  .ButtonStyle1.White a{
+  font-size: 85%;
+  line-height: 123%;
+  }
+}*/
+
+
+
+/* for - 399px
+=========================================================================================== */
+
+@media screen and (max-width: 399px) {
+
+  .JS .TopBrandingInner {
+    /*! min-height: 500px; */
+  }
+  .JS .TopBrandingInner .TextSet .Title {
+    font-size: 200%;
+    line-height: 120%;
+  }
+  .JS .TopBrandingInner .TextSet .SubTitle {
+    font-size: 120%;
+    line-height: 120%;
+  }
+
+  /* ------ Social Account Button ------ */
+
+  .OptionRWD.JS #SocialAccountBottom ul {
+    font-size: 80%;
+    padding: 0;
+  }
+
+}
+
+
+/* for print
+=========================================================================================== */
+
+@media print {
+
+  body {
+    width: 1275px !important;
+  }
+
+  #top {
+    width: 1275px !important;
+  }
+
+  #HeaderArea {
+    width: 1275px !important;
+  }
+
+  #HeaderArea:before {
+    width: 1275px !important;
+  }
+
+  #Contents,
+  #Footer {
+    width: 1275px !important;
+  }
+
+  #Footer ul {
+    width: 800px !important;
+  }
+
+  .TopBrandingImgStyle {
+    width: 1275px !important;
+    height: 600px !important;
+    margin-top: 0 !important;
+    overflow: hidden !important;
+  }
+  .TopBrandingImg img {
+    width: auto !important;
+    height: 100% !important;
+  }
+  .TopBrandingInner {
+    height: 600px !important;
+  }
+
+  .TopSearchArea {
+    position: relative !important;
+    margin: 0 auto !important;
+    width: 840px !important;
+    transform: translateY(-50%) !important;
+    -webkit- transform: translateY(-50%) !important;
+    border-radius: 5px !important;
+    top: auto !important;
+  }
+
+  .TopicsArea {
+    width: 1275px !important;
+  }
+  .TopicsArea .Inner {
+    width: 1245px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  #TopicsRotationBanner {
+    margin-left: -22px !important;
+  }
+  #TopicsRotationBanner #SlideButton {
+    right: 20px;
+  }
+
+  h2.TopStyle img,
+  .TopStyle h2 img {
+    z-index: 100 !important;
+  }
+
+}
+
+@media print and (-ms-high-contrast: none){
+
+  .TopBrandingImg img {
+    top: 0;
+    left: 0;
+    transform: translateY(0) translateX(0);
+    -webkit- transform: translateY(0) translateX(0);
+  }
+
+}
