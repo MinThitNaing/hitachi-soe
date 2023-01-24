@@ -233,7 +233,7 @@
 .TopBrandingLink {
 	box-sizing: border-box;
 	position: absolute;
-	bottom:80px;
+	bottom:100px;
 	left: 50%;
 	transform: translate(-50%, 0);
 	z-index: 1;
