@@ -94,7 +94,11 @@ span{
 }
 
 .navlink-active span{
-  color: #fff;
+  color: #000;
+}
+
+.navbar-brand:hover{
+    color: #000;
 }
 
 @media (max-width: 1000px){
@@ -167,6 +171,14 @@ span{
     position: relative;
 }
 
+.dropdown-menu{
+    padding: 8px 16px;
+}
+
+.dropdown-item{
+    margin: 0 auto !important;
+}
+
 .dropdown.second{
     top: 0;
     left: 100%;
@@ -174,7 +186,6 @@ span{
     cursor: pointer;
     transform: translateX(10px);
 }
-
 
 .fusion-megamenu-widgets-container{
     width: 25%;
@@ -290,6 +301,17 @@ span{
 .information-col{
     width: 32% !important;
 }
+
+.information-col-wrapper img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.information-col-wrapper img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
 /* ----- End Information Section ----- */
 /* ----- Start Main Section ----- */
 .main-container{
@@ -403,6 +425,7 @@ span{
     position: relative;
     transition: all .6s ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .main-image:before {
@@ -422,6 +445,21 @@ span{
     vertical-align: top;
     max-width: 100%;
     height: auto;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.main-image img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.main-image-right{
+    overflow: hidden !important;
+}
+
+.main-image-right:hover{
+    transform: scale(1.03);
 }
 
 .main-image-button {
@@ -460,7 +498,6 @@ span{
     margin: 0 0 10px !important;
 
     font-family: Arial,Helvetica,sans-serif;
-    font-weight: 400;
     line-height: 1.36;
     letter-spacing: 0;
     font-style: normal;
@@ -472,6 +509,11 @@ span{
     transition-property: color,background-color,border-color;
     transition-duration: .2s;
     transition-timing-function: linear;
+    z-index: 3;
+}
+
+.main-image-content h4 a:hover{
+    color: #c02 !important;
 }
 
 .main-image-content p {
@@ -752,5 +794,9 @@ span{
 .footer-bottom-text:hover{
   color: #000 !important;
   opacity: 0.7;
+}
+
+.text-right{
+    right: 10%;
 }
 /* ----- End FooterArea -----*/
