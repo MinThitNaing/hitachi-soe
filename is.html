@@ -21,7 +21,7 @@
 	<body>
 		<!----- Start Navigation Section ----->
 		<nav class="nav1 navbar navbar-expand-lg navbar-light">
-			<div class="container">
+				<div class="container">
 				  <a class="navbar-brand" href="https://www.hitachi.com/"><img src="./images/corp_id.png" alt="Hitachi"></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
 				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 				    <ul class="navbar-nav ms-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><img src="./images/icon_earth.png" alt="Region / Language"><span class="sr-only">Region/Language</span></a>
+				        <a class="nav-link" href="" role="button" data-toggle="dropdown" aria-expanded="false"><img src="./images/icon_earth.png" alt="Region / Language"><span class="sr-only">Region/Language</span></a>
 				        <div class="dropdown-menu" id="LangMenu">
 					        <a class="dropdown-item" href="#">Global(English)</a>
 					        <a class="dropdown-item" href="#">Japan(Japanese)</a>
@@ -42,7 +42,7 @@
 				      </li>
 				      <li class="nav-item">
 				        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false"><img src="./images/icon_search.png" alt="Search"><span class="sr-only">Search</span></a>
-				        <div id="SearchFormArea" class="dropdown-menu">
+				        <!--<div id="SearchFormArea" class="dropdown-menu">
 							<div>
 								<button class="BtnClose" aria-label="Close"></button>
 								<form action="https://module.hitachi.com/search/GLOBAL.html" method="get" accept-charset="UTF-8">
@@ -54,23 +54,23 @@
 										</div>
 								</form>
 							</div>
-						</div>
+						</div>-->
 				      </li>
 				    </ul>
 				  </div>
-			</div>
+				</div>
 		</nav>
 
 		<nav class="nav2 navbar navbar-expand-lg bg-light">
-			<div class="container">
-				<a class="navbar-brand" href="index.html"><img src="./images/logo.jpg" height="50" alt="Hitachi, Ltd."> Hitachi Soe Electric & Machinery</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				  <span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<div class="container">
+				  <a class="navbar-brand" href="index.html"><img class="logo-text" src="./images/logo.jpg" height="50" alt="Hitachi, Ltd."> Hitachi Soe Electric & Machinery</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
 				    <ul class="navbar-nav ms-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link navlink-active" href=""><span class="sr-only">Products & Services</span></a>
+				        <a class="nav-link" href=""><span class="sr-only">Products & Services</span></a>
 				        <div class="dropdown">
 						  <div class="fusion-megamenu-widgets-container second-level-widget">
 						  	<div id="media_image-3" class="widget widget_media_image">
@@ -111,9 +111,19 @@
 				      <li class="nav-item">
 				        <a class="nav-link" href="#"><span class="sr-only">Careers</span></a>
 				      </li>
+				      <!--<li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+				          Dropdown link
+				        </a>
+				        <div class="dropdown-menu">
+				          <a class="dropdown-item" href="#">Action</a>
+				          <a class="dropdown-item" href="#">Another action</a>
+				          <a class="dropdown-item" href="#">Something else here</a>
+				        </div>
+				      </li>-->
 				    </ul>
+				  </div>
 				</div>
-			</div>
 		</nav>
 		<!----- End Navigation Section ----->
 		<!----- Start Header Section ----->
@@ -170,11 +180,11 @@
                     <div class="footer-col col-lg-3 col-md-6">
                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Connect with Us</h3>
-                            <p>You don't need to think about IT with our team and services.</p>
+                            <p>Please send us email to query.</p>
                             <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
 	                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
 	                            <!--<button class="btn btn_get btn_get_two" type="submit">Subscribe</button>-->
-	                            <a href="" class="careers_btn btn btn-lg btn-danger btn_get btn_get_two custom-btn btn-9">Submit</a>
+	                            <a href="" class="careers_btn btn btn-danger btn_get btn_get_two custom-btn btn-9">Submit</a>
 	                            <p class="mchimp-errmessage" style="display: none;"></p>
 	                            <p class="mchimp-sucmessage" style="display: none;"></p>
                             </form>
@@ -184,12 +194,12 @@
                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Resources</h3>
                             <ul class="list-unstyled f_list">
-                                <li><a href=""><i class="uil uil-bookmark"></i>About Us</a></li>
-                                <li><a href=""><i class="uil uil-document-layout-left"></i>Blog</a></li>
-                                <li><a href=""><i class="uil uil-signin"></i>Customer Portal</a></li>
-                                <li><a href=""><i class="uil uil-image-lock"></i>Projects</a></li>
-                                <li><a href=""><i class="uil uil-cloud-database-tree"></i>Services</a></li>
-                                <li><a href=""><i class="uil uil-comparison"></i>Solutions</a></li>
+                            	<li><a href="">Home</a></li>
+                            	<li><a href="">Global</a></li>
+                                <li><a href="">Products & Services</a></li>
+                                <li><a href="">News</a></li>
+                                <li><a href="">Careers</a></li>
+                                <li><a href="">About Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -197,17 +207,18 @@
                        	<div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                             <h3 class="f-title f_600 t_color f_size_18">Contact Us</h3>
                             <ul class="list-unstyled f_list">
-                                <li><a href=""><i class="uil uil-map-marker"></i>No.73-A, Padauk Street, Thuwana, Yangon.</a></li>
-                                <li><a href=""><i class="uil uil-mobile-vibrate"></i>+959 899 227 010</a></li>
-                                <li><a href=""><i class="uil uil-envelope-check"></i>info@itgatewaymm.com</a></li>
-                                <li><a href=""><i class="uil uil-clock-three"></i>24x7x365 Services</a></li>
+                                <li><a href="">No.73-A, Padauk Street, Thuwana,</a></li>
+                                <li><a href="">Yangon, Myanmar.</a></li>
+                                <li><a href="">+959 899 227 010</a></li>
+                                <li><a href="">info@hitachi-soe.com</a></li>
+                                <li><a href="">24x7x365 Services</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="footer-col col-lg-3 col-md-6">
+                        <h3 class="f-title f_600 t_color f_size_18">Social Network</h3>
                         <div class="fusion-text fusion-text-4" id="slider-social-media-icons">
                         	<div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-	                        	<h3 class="f-title f_600 t_color f_size_18">Social Network</h3>
 								<p>
 									<a href="" rel="noopener">
 										<img class="alignnone size-medium wp-image-8983" src="./images/facebook.png" alt="">
@@ -241,12 +252,12 @@
             <div class="footer_bottom">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-7">
-                            <p class="mb-0 f_400"><a href="#" target="_blank">© Hitachi Soe Electric & Machinery </a>2022 All rights reserved.</p>
+                        <div class="col-lg-12">
+                            <p class="mb-0 f_400"><a class="footer-bottom-text" href="" target="_blank">© Hitachi Soe Electric & Machinery </a>2023 All rights reserved and developed by itGateway Technology Group Ltd.</p>
                         </div>
-                        <div class="col-lg-6 col-sm-5 text-right">
-                            <p>Developed by <i class="icon_heart"></i><a href="#" target="_blank">itGateway Technology Group Ltd.</a></p>
-                        </div>
+                        <!--<div class="col-lg-6 col-sm-5 text-right">
+                            <p>Developed by <i class="icon_heart"></i><a class="footer-bottom-text" href="" target="_blank">itGateway Technology Group Ltd.</a></p>
+                        </div>-->
                     </div>
                 </div>	
             </div>
