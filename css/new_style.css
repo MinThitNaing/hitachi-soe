@@ -742,6 +742,51 @@ span{
   padding: auto 0;
   vertical-align: middle;
 }
+ .card {
+    width: 20rem;
+    margin: 10px 20px;
+ }
+
+ .pmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin: 2rem 5rem;
+ }
+
+ .list-navigation{
+  display: flex;
+  width: 40%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.list-navigation ul{
+  list-style: none;
+  display: flex;
+  margin: auto;
+}
+.list-navigation ul li{
+    padding: 0 8px;
+    align-items: center;
+    display: flex;
+}
+
+.list-navigation ul li a{
+  color: #333;
+  margin: 0 0.8rem;
+  cursor: pointer;
+} 
+.active-page{
+  color: red !important;
+  font-weight: 550;
+}
+.list-navigation .uil{
+  font-size: 2rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+
 /* ----- End Production Section ----- */
 /* ----- Start FooterArea -----*/
 .footer{
