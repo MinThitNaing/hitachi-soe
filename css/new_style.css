@@ -824,7 +824,23 @@ span{
     height: 120%;
 }
 
+/*----- Contact ------*/
+.right{
+    float: right;
+    margin-top: 60px;
+    width: 30%;
+    padding-left: 0;
+}
 
+.left{
+    padding-left: 0;
+}
+
+.network{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
 
 
 /* ----- Start FooterArea -----*/
