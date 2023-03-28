@@ -31,6 +31,10 @@ span{
   padding: 0 3%;
 }
 
+:root{
+    --swiper-pagination-color: #C02;
+}
+
 /* ----- End Reusable Codes ----- */
 /* ----- Start Navigation Bar ----- */
 .navbar{
@@ -293,7 +297,6 @@ span{
   margin: 0px;
   padding: 12px 0px;
   width: 100%;
-  background: rgba(255,255,255,0.6);
   z-index: 3;
 }
 
@@ -731,6 +734,11 @@ text-align: center;
   position: relative;
 }
 
+.product_btn{
+  padding: 7px 40px;
+  background-color: #c02;
+}
+
 
 
 .product-content{
@@ -1111,6 +1119,11 @@ text-align: center;
 }
 /* ----- End FooterArea -----*/
 
+.portfolio-container{
+    background: rgba(255,255,255,0.6);
+    padding: 10px;
+}
+
 .portfolio .portfolio-item {
  padding: 0 12px;
 }
@@ -1156,7 +1169,7 @@ text-align: center;
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.65);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -1464,15 +1477,17 @@ text-align: center;
 }
 
 .panel-container{
-    margin: 12px 90px;
+    margin: 15px 90px;
 }
 
 .panel-card{
-    border: 2px solid;
+    box-sizing: content-box;
+    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
     background: #fff;
     position: relative;
     border-radius: 0;
     height: 100%;
+    margin-top: 12px;
     margin-bottom: 40px;
 }
 
@@ -1545,7 +1560,7 @@ text-align: center;
 
 
 .package-card{
-    border: 2px solid;
+    box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
     background: #fff;
     position: relative;
     border-radius: 0;
@@ -1648,7 +1663,19 @@ text-align: center;
 }
 
 .package-detail{
-    margin: 0px 70px;
+    width: 80%;
+}
+
+.pt-detail{
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+}
+
+@media(min-width: 2000px){
+    .pt-detail{
+        padding: 0px 500px;
+    }
 }
 
 .portfolio-description h2 {
@@ -1663,8 +1690,8 @@ text-align: center;
 }
 
 .breadcrumbs {
-  padding: 140px 0 60px 0;
-  min-height: 30vh;
+  padding: 90px 0 60px 0;
+  min-height: 70vh;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -1673,7 +1700,7 @@ text-align: center;
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(4, 9, 10, 0.7);
   position: absolute;
   inset: 0;
 }
@@ -1716,4 +1743,6 @@ text-align: center;
   color: #fff;
   content: "/";
 }
+
+/*------ Package Type Transfromer -------*/
 
