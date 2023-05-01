@@ -1,7 +1,7 @@
 /* ----- Start Reusable Codes ----- */
 
 html {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 body {
